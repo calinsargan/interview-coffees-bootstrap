@@ -12,7 +12,7 @@ func (self Service) Create(coffee Coffee) (Coffee, error) {
 	return Coffee{}, nil
 }
 
-func (self Service) Get(coffeeID int) (Coffee, error) {
+func (self Service) Read(coffeeID int) (Coffee, error) {
 	return Coffee{}, nil
 }
 
