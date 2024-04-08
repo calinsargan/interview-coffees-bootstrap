@@ -1,8 +1,6 @@
 package repository
 
 import (
-	"errors"
-
 	"github.com/calinsargan/interview-coffees-bootstrap/internal/coffee"
 )
 
@@ -35,7 +33,7 @@ func (self Mem) Create(coffee coffee.Coffee) (coffee.Coffee, error) {
 func (self Mem) Get(coffeeID int) (coffee.Coffee, error) {
 	// todo: #5 find item in slice by ID
 
-	return coffee.Coffee{}, errors.New("not found")
+	return coffee.Coffee{}, nil
 }
 
 func (self Mem) Update(coffee coffee.Coffee) error {
